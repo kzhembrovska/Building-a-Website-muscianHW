@@ -1,3 +1,5 @@
+{margin: 0; padding: 0;}
+
 .home{
 	background-color: #F24535;
 }
@@ -18,25 +20,20 @@ margin-top:17em;
 body{
 	background-color:#77E1A1;
 }
+
 header{
 	background-color: white;
+
 }
 
 header img{
-	max-width: 50%;
-	padding-top: 5em;
-	padding-left: 10em;
+	max-width: 45%;
+	padding-top: 15em;
+	padding-left: 25em;
+	padding-bottom: 15em;
+	transform: rotate(-13deg);
 }
 
-.finh {
-	margin-left: 100em;
-	margin-top: 10 em;
-}
-
-.finh img{
-	max-width:10%;
-	display: block;
-}
 
 .music{
 
@@ -48,24 +45,92 @@ header img{
 	padding:0;
 }
 
-.reel{
-
+.reel {
+	width: 1920px;
+ 	overflow: hidden;
+ 	margin: 0;
+ 	height: 382.5px;
+ 	width: 3550px;
 }
 
 .reel img{
-	max-width:24%;
+	max-width:25%;
 	display: inline-block;
 	padding:0;
 }
 
-.promo{
+/*keyframe animations*/
 
+.first {
+ -webkit-animation: bannermove 30s linear infinite;
+    -moz-animation: bannermove 30s linear infinite;
+     -ms-animation: bannermove 30s linear infinite;
+      -o-animation: bannermove 30s linear infinite;
+         animation: bannermove 30s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+
+/*end keyframe animation*/
+
+.promo{
+	margin: 0;
 }
 
 .promo img{
 	max-width:100%;
-	display: inline-block;
+	display: inline;
 	padding:0;
+	min-height: 832.5px;
+    min-width: 2188px;
 }
 
 footer{
@@ -75,5 +140,8 @@ footer{
 footer img{
 	max-width:5%;
 	display: inline-block;
-	padding: 10 em;
+	padding: 10px;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	margin-left: 10 em;
 }
